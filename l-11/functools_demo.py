@@ -17,3 +17,12 @@ def trace(func):
         print("__" * func.level + f"<- {func.__name__}({', '.join(func_args)}) == {res}")
         return res
     return inner
+
+
+@trace
+def print_odd_numbers():
+    for i in range(1, 15, 2):
+        print(i)
+
+
+print_odd_numbers()
