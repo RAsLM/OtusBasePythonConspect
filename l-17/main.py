@@ -147,7 +147,6 @@ def fetch_posts_and_users_by_tags():
 
 
 
-
 if __name__ == "__main__":
     session = Session()
 
