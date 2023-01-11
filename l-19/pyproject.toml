@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "l-19"
+version = "0.1.0"
+description = ""
+authors = ["Aslanov Ruslan <aslanov@speechpro.com>"]
+readme = "README.md"
+packages = [{include = "l_19"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^1.4.46"
+psycopg2-binary = "^2.9.5"
+
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
